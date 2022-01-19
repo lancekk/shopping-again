@@ -23,7 +23,7 @@ function Detail() {
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-  const {products, cart} = useSelector(data => data);
+  const {products, cart} = useSelector(data => data.shop);
 
   useEffect(() => {
     // already in global store

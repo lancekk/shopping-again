@@ -8,7 +8,7 @@ import spinner from '../../assets/spinner.gif';
 import { useDispatch, useSelector } from 'react-redux';
 
 function ProductList() {
-  const {currentCategory, products} = useSelector(data => data);
+  const {currentCategory, products} = useSelector(data => data.shop);
   const state = {currentCategory, products};
   const dispatch = useDispatch();
 

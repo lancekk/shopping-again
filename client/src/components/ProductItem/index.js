@@ -6,7 +6,7 @@ import { idbPromise } from "../../utils/helpers";
 import { useDispatch, useSelector } from "react-redux";
 
 function ProductItem(item) {
-  const {cart} = useSelector(data => data);
+  const {cart} = useSelector(data => data.shop);
   const dispatch = useDispatch();
 
   const {
